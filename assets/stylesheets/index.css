@@ -1,0 +1,35 @@
+@import 'general.css';
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex ;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+    border: 1px solid var(--color-primary);
+    padding: 12px;
+}
+
+.card p {
+    flex: 1;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: var(--color-text);
+    color: var(--color-background);
+    text-align: center;
+    padding: 8px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain;
+}

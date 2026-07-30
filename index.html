@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Porsche Catalog</title>
+    <link href="assets/stylesheets/index.css" rel="stylesheet" type="text/css">
+    <style>
+      /* Pulse Animation */
+      @keyframes pulse {
+        0%, 100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.8;
+          transform: scale(1.02);
+        }
+      }
+
+      /* Apply animation on hover */
+      .card:hover {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease;
+      }
+
+      /* Enhanced visual effect */
+      .card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .card:hover {
+        border-color: #010205;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Header -->
+
+    <header>
+
+        <img src="assets/images/logo1.png" alt="Porsche Logo" id="logo" />
+
+    </header>
+
+    <!-- Hero -->
+
+    <section>
+
+      <div class="card-container">
+
+        <div class="card">
+          <h2>911</h2>
+          <img src="assets/images/logo2.png" alt="Porsche 911" />
+          <p>The iconic rear-engine sports car with the highest performance.</p>
+          <a href="detail.html?id=911&img=logo2.png&desc=The%20iconic%20rear-engine%20sports%20car%20with%20the%20highest%20performance.&specs=Engine:%206-cylinder%20turbocharged%20Boxer%7CPower:%20379-443%20HP%7CTop%20speed:%20299%20km/h%7C0-100%20acceleration:%203.2-3.9%20s%7CFuel:%20Gasoline">View details</a>
+        </div>
+
+        <div class="card">
+          <h2>718</h2>
+          <img src="assets/images/logo3.png" alt="Porsche 718" />
+          <p>Two-seater with high driving dynamics thanks to its mid-engine.</p>
+          <a href="detail.html?id=718&img=logo3.png&desc=Two-seater%20with%20high%20driving%20dynamics%20thanks%20to%20its%20mid-engine.&specs=Engine:%204-cylinder%20turbocharged%20Boxer%7CPower:%20300-394%20HP%7CTop%20speed:%20275-293%20km/h%7C0-100%20acceleration:%203.6-4.4%20s%7CFuel:%20Gasoline">View details</a>
+        </div>
+
+        <div class="card">
+          <h2>918 Spyder</h2>
+          <img src="assets/images/logo15.png" alt="Porsche 918 Spyder" />
+          <p>The most exclusive Hypercar of the brand with extraordinary performance.</p>
+          <a href="detail.html?id=918%20Spyder&img=logo15.png&desc=The%20most%20exclusive%20Hypercar%20of%20the%20brand%20with%20extraordinary%20performance.&specs=Engine:%20Turbocharged%20V8%20+%20Hybrid%20electric%20motor%7CPower:%20875%20HP%20total%7CTop%20speed:%20340%20km/h%7C0-100%20acceleration:%202.5%20s%7CFuel:%20Gasoline%20+%20Electricity">View details</a>
+        </div>
+
+        <div class="card">
+          <h2>Panamera</h2>
+          <img src="assets/images/logo4.avif" alt="Porsche Panamera" />
+          <p>Luxury four-seat sports sedan.</p>
+          <a href="detail.html?id=Panamera&img=logo4.avif&desc=Luxury%20four-seat%20sports%20sedan.&specs=Engine:%20Turbocharged%20V6%7CPower:%20330-550%20HP%7CTop%20speed:%20280-305%20km/h%7C0-100%20acceleration:%203.6-6.3%20s%7CFuel:%20Gasoline">View details</a>
+        </div>
+
+        <div class="card">
+          <h2>Taycan</h2>
+          <img src="assets/images/logo7.avif" alt="Porsche Taycan" />
+          <p>Fully electric sports sedan with front and rear trunk.</p>
+          <a href="detail.html?id=Taycan&img=logo7.avif&desc=Fully%20electric%20sports%20sedan%20with%20front%20and%20rear%20trunk.&specs=Engine:%20Electric%20induction%20motor%7CPower:%20402-938%20HP%7CTop%20speed:%20260%20km/h%7CRange:%20460-519%20km%7CFuel:%20Electricity">View details</a>
+        </div>
+
+        <div class="card">
+          <h2>Macan</h2>
+          <img src="assets/images/logo5.avif" alt="Porsche Macan" />
+          <p>Compact SUV with great versatility.</p>
+          <a href="detail.html?id=Macan&img=logo5.avif&desc=Compact%20SUV%20with%20great%20versatility.&specs=Engine:%20Turbocharged%20V6%7CPower:%20252-440%20HP%7CTop%20speed:%20230-250%20km/h%7CTrunk%20capacity:%20488%20liters%7CFuel:%20Gasoline">View details</a>
+        </div>
+
+        <div class="card">
+          <h2>Macan Electric</h2>
+          <img src="assets/images/logo9.avif" alt="Porsche Macan Electric" />
+          <p>Compact electric SUV with great versatility and elegant aesthetics.</p>
+          <a href="detail.html?id=Macan%20Electric&img=logo9.avif&desc=Compact%20electric%20SUV%20with%20great%20versatility%20and%20elegant%20aesthetics.&specs=Engine:%20Electric%20induction%20motor%7CPower:%20402-563%20HP%7CTop%20speed:%20200-210%20km/h%7CRange:%20380-470%20km%7CFuel:%20Electricity">View details</a>
+        </div>
+
+        <div class="card">
+          <h2>Cayenne</h2>
+          <img src="assets/images/logo8.png" alt="Porsche Cayenne" />
+          <p>SUV with up to 5 seats, and above all, a sports car.</p>
+          <a href="detail.html?id=Cayenne&img=logo8.png&desc=SUV%20with%20up%20to%205%20seats%2C%20and%20above%20all%2C%20a%20sports%20car.&specs=Engine:%20Turbocharged%20V6%20V8%7CPower:%20340-550%20HP%7CTop%20speed:%20240-280%20km/h%7CTrunk%20capacity:%20770%20liters%7CFuel:%20Gasoline">View details</a>
+        </div>
+
+        <div class="card">
+          <h2>Cayenne Electric</h2>
+          <img src="assets/images/logo10.png" alt="Porsche Cayenne Electric" />
+          <p>Electric SUV with up to 5 seats, with tremendous power.</p>
+          <a href="detail.html?id=Cayenne%20Electric&img=logo10.png&desc=Electric%20SUV%20with%20up%20to%205%20seats%2C%20with%20tremendous%20power.&specs=Engine:%20Dual%20electric%20motor%7CPower:%20402-563%20HP%7CTop%20speed:%20250%20km/h%7CRange:%20500-606%20km%7CFuel:%20Electricity">View details</a>
+        </div>
+
+      </div>
+      
+
+    </section>    
+
+    <!-- Footer -->
+
+    <footer>
+      <span>© 2025 Diego Fiz García</span>
+      <p>Data measured in accordance with the WLTP (Worldwide Harmonized Light Vehicles Test Procedure), a more realistic measurement procedure for determining consumption and pollutant emissions data (CO2), required by law. Accessory features and accessories (accessories, tire models, etc.) can substantially modify vehicle parameters, such as weight, rolling resistance and aerodynamics and, together with weather and traffic conditions, as well as individual handling, can affect gasoline and electricity consumption, CO2 emission levels and vehicle performance values.
+        
+        You have at your disposal the database of the Institute for Diversification and Energy Saving where you can consult information on consumption, emissions and other specifications of the model (https://coches.idae.es/base-datos/marca-y-modelo).</p>
+
+
+
+
+    </footer>
+
+  </body>
+</html>
